@@ -76,7 +76,7 @@ for _, row in df_sfr.iterrows():
 
         folium.CircleMarker(
             location=[new_lat, new_lon],
-            radius=4,
+            radius=2,
             color="blue",
             fill=True,
             fill_color="blue",
@@ -102,7 +102,7 @@ for _, row in df_dsc.iterrows():
 
         folium.CircleMarker(
             location=[new_lat, new_lon],
-            radius=4,
+            radius=2,
             color="red",
             fill=True,
             fill_color="red",
