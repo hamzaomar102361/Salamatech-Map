@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a30c734f4d5e8156b6234f5686af36e7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a30c734f4d5e8156b6234f5686af36e7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a30c734f4d5e8156b6234f5686af36e7 = L.map(
+                "map_a30c734f4d5e8156b6234f5686af36e7",
+                {
+                    center: [34.8021, 38.9968],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0afd8a8e8da92dcd54038f377c308c73 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 5,
+  "maxZoom": 10,
+  "maxNativeZoom": 10,
+  "noWrap": false,
+  "attribution": "CartoDB",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0afd8a8e8da92dcd54038f377c308c73.addTo(map_a30c734f4d5e8156b6234f5686af36e7);
+        
+    
+            map_a30c734f4d5e8156b6234f5686af36e7.fitBounds(
+                [[32.3, 35.7], [37.3, 42.4]],
+                {}
+            );
+        
+    
+            var feature_group_22ff27a6317c48230bad16397300a9b7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_a8bf36a3e5d87ee3dddcb2f31947f5ed = L.circleMarker(
+                [34.8124, 36.7137],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_22ff27a6317c48230bad16397300a9b7);
+        
+    
+        var popup_a81bde5f21cdd1ea0f6f3f0cfc74ce76 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3c67d7f3764a8bf3107e71318af1046b = $(`<div id="html_3c67d7f3764a8bf3107e71318af1046b" style="width: 100.0%; height: 100.0%;"><b>SFR001</b><br>Salamatech<br>Homs</div>`)[0];
+                popup_a81bde5f21cdd1ea0f6f3f0cfc74ce76.setContent(html_3c67d7f3764a8bf3107e71318af1046b);
+            
+        
+
+        circle_marker_a8bf36a3e5d87ee3dddcb2f31947f5ed.bindPopup(popup_a81bde5f21cdd1ea0f6f3f0cfc74ce76)
+        ;
+
+        
+    
+    
+            circle_marker_a8bf36a3e5d87ee3dddcb2f31947f5ed.bindTooltip(
+                `<div>
+                     SFR001
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d39b76b1abebb86299eed9bc38994884 = L.circleMarker(
+                [36.2821, 37.1343],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_22ff27a6317c48230bad16397300a9b7);
+        
+    
+        var popup_e174f92bd66f3b713121ddf781beba66 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_10f6959bf1ebbbc4d62aaad4b6e3c3a1 = $(`<div id="html_10f6959bf1ebbbc4d62aaad4b6e3c3a1" style="width: 100.0%; height: 100.0%;"><b>SFR002</b><br>Salamatech<br>Aleppo</div>`)[0];
+                popup_e174f92bd66f3b713121ddf781beba66.setContent(html_10f6959bf1ebbbc4d62aaad4b6e3c3a1);
+            
+        
+
+        circle_marker_d39b76b1abebb86299eed9bc38994884.bindPopup(popup_e174f92bd66f3b713121ddf781beba66)
+        ;
+
+        
+    
+    
+            circle_marker_d39b76b1abebb86299eed9bc38994884.bindTooltip(
+                `<div>
+                     SFR002
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3d33460838f7d8373ff88ad55fb5a35 = L.circleMarker(
+                [36.0106, 36.6339],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_22ff27a6317c48230bad16397300a9b7);
+        
+    
+        var popup_ca32afd2c64c75b87eec6e4ecfa9daf5 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_70dbcff66d6d84803784bd7eb97ab2bb = $(`<div id="html_70dbcff66d6d84803784bd7eb97ab2bb" style="width: 100.0%; height: 100.0%;"><b>SFR003</b><br>Salamatech<br>Idleb</div>`)[0];
+                popup_ca32afd2c64c75b87eec6e4ecfa9daf5.setContent(html_70dbcff66d6d84803784bd7eb97ab2bb);
+            
+        
+
+        circle_marker_f3d33460838f7d8373ff88ad55fb5a35.bindPopup(popup_ca32afd2c64c75b87eec6e4ecfa9daf5)
+        ;
+
+        
+    
+    
+            circle_marker_f3d33460838f7d8373ff88ad55fb5a35.bindTooltip(
+                `<div>
+                     SFR003
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e87b716159e97d49293ab12e23bb450 = L.circleMarker(
+                [35.99532135955, 36.6809228201834],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_22ff27a6317c48230bad16397300a9b7);
+        
+    
+        var popup_9dbe133fa5c4931439c16ef97781bf5a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_beddb0936f6b0c6039e9b3f786b7227d = $(`<div id="html_beddb0936f6b0c6039e9b3f786b7227d" style="width: 100.0%; height: 100.0%;"><b>SFR004</b><br>Salamatech<br>Idleb</div>`)[0];
+                popup_9dbe133fa5c4931439c16ef97781bf5a.setContent(html_beddb0936f6b0c6039e9b3f786b7227d);
+            
+        
+
+        circle_marker_0e87b716159e97d49293ab12e23bb450.bindPopup(popup_9dbe133fa5c4931439c16ef97781bf5a)
+        ;
+
+        
+    
+    
+            circle_marker_0e87b716159e97d49293ab12e23bb450.bindTooltip(
+                `<div>
+                     SFR004
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb0cc0baf7a080fe563f1e2c85563b66 = L.circleMarker(
+                [36.2421, 37.203582032302755],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_22ff27a6317c48230bad16397300a9b7);
+        
+    
+        var popup_38cb9534894e34d4af95bc5b840e912c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9852b48b05f58c15b8b449bc8ea0f27d = $(`<div id="html_9852b48b05f58c15b8b449bc8ea0f27d" style="width: 100.0%; height: 100.0%;"><b>SFR005</b><br>Salamatech<br>Aleppo</div>`)[0];
+                popup_38cb9534894e34d4af95bc5b840e912c.setContent(html_9852b48b05f58c15b8b449bc8ea0f27d);
+            
+        
+
+        circle_marker_bb0cc0baf7a080fe563f1e2c85563b66.bindPopup(popup_38cb9534894e34d4af95bc5b840e912c)
+        ;
+
+        
+    
+    
+            circle_marker_bb0cc0baf7a080fe563f1e2c85563b66.bindTooltip(
+                `<div>
+                     SFR005
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95fd53fec544e018c39d5c779f0735cd = L.circleMarker(
+                [34.7724, 36.782982032302755],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_22ff27a6317c48230bad16397300a9b7);
+        
+    
+        var popup_6dce93ebaf6be788cbb36f17936374ed = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1d4ea4f778eebd441293e7ccd58875aa = $(`<div id="html_1d4ea4f778eebd441293e7ccd58875aa" style="width: 100.0%; height: 100.0%;"><b>SFR006</b><br>Salamatech<br>Homs</div>`)[0];
+                popup_6dce93ebaf6be788cbb36f17936374ed.setContent(html_1d4ea4f778eebd441293e7ccd58875aa);
+            
+        
+
+        circle_marker_95fd53fec544e018c39d5c779f0735cd.bindPopup(popup_6dce93ebaf6be788cbb36f17936374ed)
+        ;
+
+        
+    
+    
+            circle_marker_95fd53fec544e018c39d5c779f0735cd.bindTooltip(
+                `<div>
+                     SFR006
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0fb66782c62cb59a2475504f523bad16 = L.circleMarker(
+                [35.2118, 36.758],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_22ff27a6317c48230bad16397300a9b7);
+        
+    
+        var popup_5f3679712764b6b954a6455a21fa0a8f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ab20359383da401cd7333a7541c90049 = $(`<div id="html_ab20359383da401cd7333a7541c90049" style="width: 100.0%; height: 100.0%;"><b>SFR007</b><br>Salamatech<br>Hama</div>`)[0];
+                popup_5f3679712764b6b954a6455a21fa0a8f.setContent(html_ab20359383da401cd7333a7541c90049);
+            
+        
+
+        circle_marker_0fb66782c62cb59a2475504f523bad16.bindPopup(popup_5f3679712764b6b954a6455a21fa0a8f)
+        ;
+
+        
+    
+    
+            circle_marker_0fb66782c62cb59a2475504f523bad16.bindTooltip(
+                `<div>
+                     SFR007
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab05fb135a780e927743687fd7a1b5cb = L.circleMarker(
+                [35.6117, 35.7915],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_22ff27a6317c48230bad16397300a9b7);
+        
+    
+        var popup_30739ceaf0c3003df5439f1cae048273 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b865fdd056e5108d8682461c3a625227 = $(`<div id="html_b865fdd056e5108d8682461c3a625227" style="width: 100.0%; height: 100.0%;"><b>SFR008</b><br>Salamatech<br>Lattakia</div>`)[0];
+                popup_30739ceaf0c3003df5439f1cae048273.setContent(html_b865fdd056e5108d8682461c3a625227);
+            
+        
+
+        circle_marker_ab05fb135a780e927743687fd7a1b5cb.bindPopup(popup_30739ceaf0c3003df5439f1cae048273)
+        ;
+
+        
+    
+    
+            circle_marker_ab05fb135a780e927743687fd7a1b5cb.bindTooltip(
+                `<div>
+                     SFR008
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ba35e9a66fc2d6a420e0b7e52734d7d = L.circleMarker(
+                [36.03, 39.01],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_22ff27a6317c48230bad16397300a9b7);
+        
+    
+        var popup_d4a9f8b945f27395fdf1cebbf8feb6e8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_bb1c3ebf5cee5b0970ec00a41d102626 = $(`<div id="html_bb1c3ebf5cee5b0970ec00a41d102626" style="width: 100.0%; height: 100.0%;"><b>SFR009</b><br>Salamatech<br>Raqqa</div>`)[0];
+                popup_d4a9f8b945f27395fdf1cebbf8feb6e8.setContent(html_bb1c3ebf5cee5b0970ec00a41d102626);
+            
+        
+
+        circle_marker_3ba35e9a66fc2d6a420e0b7e52734d7d.bindPopup(popup_d4a9f8b945f27395fdf1cebbf8feb6e8)
+        ;
+
+        
+    
+    
+            circle_marker_3ba35e9a66fc2d6a420e0b7e52734d7d.bindTooltip(
+                `<div>
+                     SFR009
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_01771afffbf21742c0e9b55db17c6378 = L.circleMarker(
+                [36.1621, 37.203582032302755],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_22ff27a6317c48230bad16397300a9b7);
+        
+    
+        var popup_68ea41112e6dbd72b01b7dea6d81bc8a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_65a3bf303c56761d1a7cfbe9f9d64dab = $(`<div id="html_65a3bf303c56761d1a7cfbe9f9d64dab" style="width: 100.0%; height: 100.0%;"><b>SFR010</b><br>Salamatech<br>Aleppo</div>`)[0];
+                popup_68ea41112e6dbd72b01b7dea6d81bc8a.setContent(html_65a3bf303c56761d1a7cfbe9f9d64dab);
+            
+        
+
+        circle_marker_01771afffbf21742c0e9b55db17c6378.bindPopup(popup_68ea41112e6dbd72b01b7dea6d81bc8a)
+        ;
+
+        
+    
+    
+            circle_marker_01771afffbf21742c0e9b55db17c6378.bindTooltip(
+                `<div>
+                     SFR010
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_375e944f975562b264e796011f2caa90 = L.circleMarker(
+                [35.95532135954999, 36.70998452130361],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_22ff27a6317c48230bad16397300a9b7);
+        
+    
+        var popup_3cf32159871d37225ff9a665bac6d03e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e595e6ddbcff9014dd6a45b42c46b2ed = $(`<div id="html_e595e6ddbcff9014dd6a45b42c46b2ed" style="width: 100.0%; height: 100.0%;"><b>SFR002</b><br>Salamatech<br>Idleb</div>`)[0];
+                popup_3cf32159871d37225ff9a665bac6d03e.setContent(html_e595e6ddbcff9014dd6a45b42c46b2ed);
+            
+        
+
+        circle_marker_375e944f975562b264e796011f2caa90.bindPopup(popup_3cf32159871d37225ff9a665bac6d03e)
+        ;
+
+        
+    
+    
+            circle_marker_375e944f975562b264e796011f2caa90.bindTooltip(
+                `<div>
+                     SFR002
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_652d592275ec2421437df33ec77816a0 = L.circleMarker(
+                [35.1318, 36.838],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_22ff27a6317c48230bad16397300a9b7);
+        
+    
+        var popup_4d4e2823fa4c793c4d09201e9be83d03 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_089126811738e7a280b21cb019fa9ce6 = $(`<div id="html_089126811738e7a280b21cb019fa9ce6" style="width: 100.0%; height: 100.0%;"><b>SFR003</b><br>Salamatech<br>Hama</div>`)[0];
+                popup_4d4e2823fa4c793c4d09201e9be83d03.setContent(html_089126811738e7a280b21cb019fa9ce6);
+            
+        
+
+        circle_marker_652d592275ec2421437df33ec77816a0.bindPopup(popup_4d4e2823fa4c793c4d09201e9be83d03)
+        ;
+
+        
+    
+    
+            circle_marker_652d592275ec2421437df33ec77816a0.bindTooltip(
+                `<div>
+                     SFR003
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68233b80c146f0b9c96be28440921bf8 = L.circleMarker(
+                [33.5938, 36.2765],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_22ff27a6317c48230bad16397300a9b7);
+        
+    
+        var popup_c8ad6fafb6c705a74b70dbc0d1228316 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_080e68cbece5dfab7d95116f81d48495 = $(`<div id="html_080e68cbece5dfab7d95116f81d48495" style="width: 100.0%; height: 100.0%;"><b>SFR005</b><br>Salamatech<br>Damascus</div>`)[0];
+                popup_c8ad6fafb6c705a74b70dbc0d1228316.setContent(html_080e68cbece5dfab7d95116f81d48495);
+            
+        
+
+        circle_marker_68233b80c146f0b9c96be28440921bf8.bindPopup(popup_c8ad6fafb6c705a74b70dbc0d1228316)
+        ;
+
+        
+    
+    
+            circle_marker_68233b80c146f0b9c96be28440921bf8.bindTooltip(
+                `<div>
+                     SFR005
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b9fc1ff3320800cdcb4e85ab9bb108d = L.circleMarker(
+                [35.905878640450005, 36.70998452130361],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_22ff27a6317c48230bad16397300a9b7);
+        
+    
+        var popup_35556069f51b415febbd453a0e585c9e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f061459700411e4b6b65832d420ac175 = $(`<div id="html_f061459700411e4b6b65832d420ac175" style="width: 100.0%; height: 100.0%;"><b>SFR008</b><br>Salamatech<br>Idleb</div>`)[0];
+                popup_35556069f51b415febbd453a0e585c9e.setContent(html_f061459700411e4b6b65832d420ac175);
+            
+        
+
+        circle_marker_8b9fc1ff3320800cdcb4e85ab9bb108d.bindPopup(popup_35556069f51b415febbd453a0e585c9e)
+        ;
+
+        
+    
+    
+            circle_marker_8b9fc1ff3320800cdcb4e85ab9bb108d.bindTooltip(
+                `<div>
+                     SFR008
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_20dd881d10af067c2fdc0ebbb6859811 = L.circleMarker(
+                [32.698899999999995, 36.1021],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_22ff27a6317c48230bad16397300a9b7);
+        
+    
+        var popup_d8d07e7c183fd197fd2ae739cd227460 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_536c258cfc2e6cdc4895e0bc76b194d0 = $(`<div id="html_536c258cfc2e6cdc4895e0bc76b194d0" style="width: 100.0%; height: 100.0%;"><b>SFR009</b><br>Salamatech<br>Daraa</div>`)[0];
+                popup_d8d07e7c183fd197fd2ae739cd227460.setContent(html_536c258cfc2e6cdc4895e0bc76b194d0);
+            
+        
+
+        circle_marker_20dd881d10af067c2fdc0ebbb6859811.bindPopup(popup_d8d07e7c183fd197fd2ae739cd227460)
+        ;
+
+        
+    
+    
+            circle_marker_20dd881d10af067c2fdc0ebbb6859811.bindTooltip(
+                `<div>
+                     SFR009
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_83688df625dde7cbebb373ab1f3af5c6 = L.circleMarker(
+                [33.5138, 36.3565],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_22ff27a6317c48230bad16397300a9b7);
+        
+    
+        var popup_8169a6ec5cbe258936195cc946e7b567 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7b530ca4bccf5b11bdbabe47d9cc41c7 = $(`<div id="html_7b530ca4bccf5b11bdbabe47d9cc41c7" style="width: 100.0%; height: 100.0%;"><b>SFR010</b><br>Salamatech<br>Damascus</div>`)[0];
+                popup_8169a6ec5cbe258936195cc946e7b567.setContent(html_7b530ca4bccf5b11bdbabe47d9cc41c7);
+            
+        
+
+        circle_marker_83688df625dde7cbebb373ab1f3af5c6.bindPopup(popup_8169a6ec5cbe258936195cc946e7b567)
+        ;
+
+        
+    
+    
+            circle_marker_83688df625dde7cbebb373ab1f3af5c6.bindTooltip(
+                `<div>
+                     SFR010
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_22ff27a6317c48230bad16397300a9b7.addTo(map_a30c734f4d5e8156b6234f5686af36e7);
+        
+    
+            var feature_group_c7c39d523dd11d8bbe02237873dcc76c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_a356d7fe579a7b0cd817dac2ae978a75 = L.circleMarker(
+                [34.6924, 36.782982032302755],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_a4fe7ec16c04843eea1b56773f2deec8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5e27b2cc0e87e2831f41676c7d2c61da = $(`<div id="html_5e27b2cc0e87e2831f41676c7d2c61da" style="width: 100.0%; height: 100.0%;"><b>DSC001</b><br>دارة السلام<br>Homs</div>`)[0];
+                popup_a4fe7ec16c04843eea1b56773f2deec8.setContent(html_5e27b2cc0e87e2831f41676c7d2c61da);
+            
+        
+
+        circle_marker_a356d7fe579a7b0cd817dac2ae978a75.bindPopup(popup_a4fe7ec16c04843eea1b56773f2deec8)
+        ;
+
+        
+    
+    
+            circle_marker_a356d7fe579a7b0cd817dac2ae978a75.bindTooltip(
+                `<div>
+                     DSC001
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d3bc0502ffbdc1c7b00cf5df142fd2fb = L.circleMarker(
+                [34.6524, 36.7137],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_e45a319c6f3caf263cce7c259cb8645d = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c1d37d9a4cbf7b85ec1ad99d0c224964 = $(`<div id="html_c1d37d9a4cbf7b85ec1ad99d0c224964" style="width: 100.0%; height: 100.0%;"><b>DSC002</b><br>دارة السلام<br>Homs</div>`)[0];
+                popup_e45a319c6f3caf263cce7c259cb8645d.setContent(html_c1d37d9a4cbf7b85ec1ad99d0c224964);
+            
+        
+
+        circle_marker_d3bc0502ffbdc1c7b00cf5df142fd2fb.bindPopup(popup_e45a319c6f3caf263cce7c259cb8645d)
+        ;
+
+        
+    
+    
+            circle_marker_d3bc0502ffbdc1c7b00cf5df142fd2fb.bindTooltip(
+                `<div>
+                     DSC002
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_895bb61cb9da25a8c81d186402c1f87a = L.circleMarker(
+                [33.433800000000005, 36.2765],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_473332cdf61ac27d8dd3cdfa674e2303 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_061fee46e8343f5d0cf997ead03123ec = $(`<div id="html_061fee46e8343f5d0cf997ead03123ec" style="width: 100.0%; height: 100.0%;"><b>DSC003</b><br>معتقلي صيدنايا<br>Damascus</div>`)[0];
+                popup_473332cdf61ac27d8dd3cdfa674e2303.setContent(html_061fee46e8343f5d0cf997ead03123ec);
+            
+        
+
+        circle_marker_895bb61cb9da25a8c81d186402c1f87a.bindPopup(popup_473332cdf61ac27d8dd3cdfa674e2303)
+        ;
+
+        
+    
+    
+            circle_marker_895bb61cb9da25a8c81d186402c1f87a.bindTooltip(
+                `<div>
+                     DSC003
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4181c9e728406d49e0be1e79496c1e74 = L.circleMarker(
+                [36.1221, 37.1343],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_93f46a92968667a9d91deb4b76b9df97 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0fbf698506065ffb060f11ff139b0f13 = $(`<div id="html_0fbf698506065ffb060f11ff139b0f13" style="width: 100.0%; height: 100.0%;"><b>DSC004</b><br>دارالسلام والازدهار<br>Aleppo</div>`)[0];
+                popup_93f46a92968667a9d91deb4b76b9df97.setContent(html_0fbf698506065ffb060f11ff139b0f13);
+            
+        
+
+        circle_marker_4181c9e728406d49e0be1e79496c1e74.bindPopup(popup_93f46a92968667a9d91deb4b76b9df97)
+        ;
+
+        
+    
+    
+            circle_marker_4181c9e728406d49e0be1e79496c1e74.bindTooltip(
+                `<div>
+                     DSC004
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f766bc9c0ef4a13fcffa3434f12ca220 = L.circleMarker(
+                [35.870000000000005, 39.01],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_0629fc78a6b9642363c3712dc7bb2ec8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1f897eb79548c1a0b8b33259d4d11f07 = $(`<div id="html_1f897eb79548c1a0b8b33259d4d11f07" style="width: 100.0%; height: 100.0%;"><b>DSC005</b><br>لأجل النسوية<br>Raqqa</div>`)[0];
+                popup_0629fc78a6b9642363c3712dc7bb2ec8.setContent(html_1f897eb79548c1a0b8b33259d4d11f07);
+            
+        
+
+        circle_marker_f766bc9c0ef4a13fcffa3434f12ca220.bindPopup(popup_0629fc78a6b9642363c3712dc7bb2ec8)
+        ;
+
+        
+    
+    
+            circle_marker_f766bc9c0ef4a13fcffa3434f12ca220.bindTooltip(
+                `<div>
+                     DSC005
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a072d2c38b9461eaf4bfdca5c16e8f64 = L.circleMarker(
+                [35.4917, 35.86078203230275],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_4f5a7f9f9ea7184ec301f8709c647626 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9a2a830647f437ce7a09d87903238255 = $(`<div id="html_9a2a830647f437ce7a09d87903238255" style="width: 100.0%; height: 100.0%;"><b>DSC006</b><br>جمعية أيادينا<br>Lattakia</div>`)[0];
+                popup_4f5a7f9f9ea7184ec301f8709c647626.setContent(html_9a2a830647f437ce7a09d87903238255);
+            
+        
+
+        circle_marker_a072d2c38b9461eaf4bfdca5c16e8f64.bindPopup(popup_4f5a7f9f9ea7184ec301f8709c647626)
+        ;
+
+        
+    
+    
+            circle_marker_a072d2c38b9461eaf4bfdca5c16e8f64.bindTooltip(
+                `<div>
+                     DSC006
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f093708e294aa6c6c32f2cc33bef9459 = L.circleMarker(
+                [35.86587864045, 36.6809228201834],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_839aaf0d01ec3c2ce6771a5eac4ee48a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7aa55f3d0f1d12a0a6063ac400ebd08f = $(`<div id="html_7aa55f3d0f1d12a0a6063ac400ebd08f" style="width: 100.0%; height: 100.0%;"><b>DSC007</b><br>جمعية زمردات التطوعي<br>Idleb</div>`)[0];
+                popup_839aaf0d01ec3c2ce6771a5eac4ee48a.setContent(html_7aa55f3d0f1d12a0a6063ac400ebd08f);
+            
+        
+
+        circle_marker_f093708e294aa6c6c32f2cc33bef9459.bindPopup(popup_839aaf0d01ec3c2ce6771a5eac4ee48a)
+        ;
+
+        
+    
+    
+            circle_marker_f093708e294aa6c6c32f2cc33bef9459.bindTooltip(
+                `<div>
+                     DSC007
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e418a1151e137f860c1146d3b0e0f1ca = L.circleMarker(
+                [35.8506, 36.6339],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_4796a896a9b2a16deb79703014387346 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f2e4a5d0ac9b846e7d7f5b74edcc3c48 = $(`<div id="html_f2e4a5d0ac9b846e7d7f5b74edcc3c48" style="width: 100.0%; height: 100.0%;"><b>DSC008</b><br>جمعية زمردات التطوعي<br>Idleb</div>`)[0];
+                popup_4796a896a9b2a16deb79703014387346.setContent(html_f2e4a5d0ac9b846e7d7f5b74edcc3c48);
+            
+        
+
+        circle_marker_e418a1151e137f860c1146d3b0e0f1ca.bindPopup(popup_4796a896a9b2a16deb79703014387346)
+        ;
+
+        
+    
+    
+            circle_marker_e418a1151e137f860c1146d3b0e0f1ca.bindTooltip(
+                `<div>
+                     DSC008
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b3427a7f4e7b720a042fda577e7a23f = L.circleMarker(
+                [36.1621, 37.06501796769725],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_2a2100f75848ff4d1e719216a304b91f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a65b63c28a121804d71842ae7cec3311 = $(`<div id="html_a65b63c28a121804d71842ae7cec3311" style="width: 100.0%; height: 100.0%;"><b>DSC009</b><br>مساحة امان<br>Aleppo</div>`)[0];
+                popup_2a2100f75848ff4d1e719216a304b91f.setContent(html_a65b63c28a121804d71842ae7cec3311);
+            
+        
+
+        circle_marker_1b3427a7f4e7b720a042fda577e7a23f.bindPopup(popup_2a2100f75848ff4d1e719216a304b91f)
+        ;
+
+        
+    
+    
+            circle_marker_1b3427a7f4e7b720a042fda577e7a23f.bindTooltip(
+                `<div>
+                     DSC009
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be59478417f27dad550ad153cecd4f7c = L.circleMarker(
+                [36.2421, 37.06501796769725],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_b37c0369f8b8850db0c623773340ac2a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_bbaec549c323f8825ccaa52b86e9f52b = $(`<div id="html_bbaec549c323f8825ccaa52b86e9f52b" style="width: 100.0%; height: 100.0%;"><b>DSC010</b><br>مساحة امان<br>Aleppo</div>`)[0];
+                popup_b37c0369f8b8850db0c623773340ac2a.setContent(html_bbaec549c323f8825ccaa52b86e9f52b);
+            
+        
+
+        circle_marker_be59478417f27dad550ad153cecd4f7c.bindPopup(popup_b37c0369f8b8850db0c623773340ac2a)
+        ;
+
+        
+    
+    
+            circle_marker_be59478417f27dad550ad153cecd4f7c.bindTooltip(
+                `<div>
+                     DSC010
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e6e81ebfa4303185db1152ac5e8f038a = L.circleMarker(
+                [35.86587864045, 36.5868771798166],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_5a8a50258458b205dc53f9ddb58297a2 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0c0adf261ea8171ea3cd64ba99531718 = $(`<div id="html_0c0adf261ea8171ea3cd64ba99531718" style="width: 100.0%; height: 100.0%;"><b>DSC011</b><br>مزايا<br>Idleb</div>`)[0];
+                popup_5a8a50258458b205dc53f9ddb58297a2.setContent(html_0c0adf261ea8171ea3cd64ba99531718);
+            
+        
+
+        circle_marker_e6e81ebfa4303185db1152ac5e8f038a.bindPopup(popup_5a8a50258458b205dc53f9ddb58297a2)
+        ;
+
+        
+    
+    
+            circle_marker_e6e81ebfa4303185db1152ac5e8f038a.bindTooltip(
+                `<div>
+                     DSC011
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_add6fc8f75b5cbef96cbfe1791756e70 = L.circleMarker(
+                [35.905878640450005, 36.557815478696384],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_1dc4b249d9d08994870343dffb41a1e9 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_30995d70f749077b63350d86a3a90070 = $(`<div id="html_30995d70f749077b63350d86a3a90070" style="width: 100.0%; height: 100.0%;"><b>DSC012</b><br>مزايا<br>Idleb</div>`)[0];
+                popup_1dc4b249d9d08994870343dffb41a1e9.setContent(html_30995d70f749077b63350d86a3a90070);
+            
+        
+
+        circle_marker_add6fc8f75b5cbef96cbfe1791756e70.bindPopup(popup_1dc4b249d9d08994870343dffb41a1e9)
+        ;
+
+        
+    
+    
+            circle_marker_add6fc8f75b5cbef96cbfe1791756e70.bindTooltip(
+                `<div>
+                     DSC012
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ddf04e889da8169e26d287d0d725f5c4 = L.circleMarker(
+                [33.5138, 36.1965],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_f85c8c9a6e988a3c62fa057b5cee9d49 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8f94b194399f56a7dd19485d8e92ab5b = $(`<div id="html_8f94b194399f56a7dd19485d8e92ab5b" style="width: 100.0%; height: 100.0%;"><b>DSC013</b><br>رابطة عائلات قيصر<br>Damascus</div>`)[0];
+                popup_f85c8c9a6e988a3c62fa057b5cee9d49.setContent(html_8f94b194399f56a7dd19485d8e92ab5b);
+            
+        
+
+        circle_marker_ddf04e889da8169e26d287d0d725f5c4.bindPopup(popup_f85c8c9a6e988a3c62fa057b5cee9d49)
+        ;
+
+        
+    
+    
+            circle_marker_ddf04e889da8169e26d287d0d725f5c4.bindTooltip(
+                `<div>
+                     DSC013
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7576cb27c08044ec0dead0cb00eef23c = L.circleMarker(
+                [34.6924, 36.64441796769725],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_005a2d7954b6812e99b9b4f272949ab8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6b22c5b2f189bd5e601a5e2060ea0ec5 = $(`<div id="html_6b22c5b2f189bd5e601a5e2060ea0ec5" style="width: 100.0%; height: 100.0%;"><b>DSC014</b><br> Harmony <br>Homs</div>`)[0];
+                popup_005a2d7954b6812e99b9b4f272949ab8.setContent(html_6b22c5b2f189bd5e601a5e2060ea0ec5);
+            
+        
+
+        circle_marker_7576cb27c08044ec0dead0cb00eef23c.bindPopup(popup_005a2d7954b6812e99b9b4f272949ab8)
+        ;
+
+        
+    
+    
+            circle_marker_7576cb27c08044ec0dead0cb00eef23c.bindTooltip(
+                `<div>
+                     DSC014
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dec444a583db028c9666198317dabeb1 = L.circleMarker(
+                [34.7724, 36.64441796769725],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_76baae65e3a6fe0536e2a367791a8b5f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_65ca519698621dd1b341c1334f861c46 = $(`<div id="html_65ca519698621dd1b341c1334f861c46" style="width: 100.0%; height: 100.0%;"><b>DSC015</b><br> Harmony <br>Homs</div>`)[0];
+                popup_76baae65e3a6fe0536e2a367791a8b5f.setContent(html_65ca519698621dd1b341c1334f861c46);
+            
+        
+
+        circle_marker_dec444a583db028c9666198317dabeb1.bindPopup(popup_76baae65e3a6fe0536e2a367791a8b5f)
+        ;
+
+        
+    
+    
+            circle_marker_dec444a583db028c9666198317dabeb1.bindTooltip(
+                `<div>
+                     DSC015
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_39dad5de2130a88d5e27f3724a6225cd = L.circleMarker(
+                [35.95532135954999, 36.557815478696384],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_a4f6de3821d6b329a37cb0828c6c80b9 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6677a3ca9ccc5c5e4d6b65982f00904c = $(`<div id="html_6677a3ca9ccc5c5e4d6b65982f00904c" style="width: 100.0%; height: 100.0%;"><b>DSC016</b><br> فريق لتكوني<br>Idleb</div>`)[0];
+                popup_a4f6de3821d6b329a37cb0828c6c80b9.setContent(html_6677a3ca9ccc5c5e4d6b65982f00904c);
+            
+        
+
+        circle_marker_39dad5de2130a88d5e27f3724a6225cd.bindPopup(popup_a4f6de3821d6b329a37cb0828c6c80b9)
+        ;
+
+        
+    
+    
+            circle_marker_39dad5de2130a88d5e27f3724a6225cd.bindTooltip(
+                `<div>
+                     DSC016
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a5888ae239c35c646f128b4eee8152d5 = L.circleMarker(
+                [35.99532135955, 36.5868771798166],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_f778b30a477d4d36e44551bbaf97e638 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_dd399591a322b1c0ca796072d4da04dc = $(`<div id="html_dd399591a322b1c0ca796072d4da04dc" style="width: 100.0%; height: 100.0%;"><b>DSC017</b><br> فريق لتكوني<br>Idleb</div>`)[0];
+                popup_f778b30a477d4d36e44551bbaf97e638.setContent(html_dd399591a322b1c0ca796072d4da04dc);
+            
+        
+
+        circle_marker_a5888ae239c35c646f128b4eee8152d5.bindPopup(popup_f778b30a477d4d36e44551bbaf97e638)
+        ;
+
+        
+    
+    
+            circle_marker_a5888ae239c35c646f128b4eee8152d5.bindTooltip(
+                `<div>
+                     DSC017
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3969ca4d66f8642fd00a9172863a9d73 = L.circleMarker(
+                [32.6189, 36.1821],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_13bfb8121b7f95a4474ebdec03038f50 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_27f4573b2859a86bb06c531456dd5b56 = $(`<div id="html_27f4573b2859a86bb06c531456dd5b56" style="width: 100.0%; height: 100.0%;"><b>DSC018</b><br>جمعية  ميرال.<br>Daraa</div>`)[0];
+                popup_13bfb8121b7f95a4474ebdec03038f50.setContent(html_27f4573b2859a86bb06c531456dd5b56);
+            
+        
+
+        circle_marker_3969ca4d66f8642fd00a9172863a9d73.bindPopup(popup_13bfb8121b7f95a4474ebdec03038f50)
+        ;
+
+        
+    
+    
+            circle_marker_3969ca4d66f8642fd00a9172863a9d73.bindTooltip(
+                `<div>
+                     DSC018
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c11f27b96dc16e6d9f17146d41bf6a80 = L.circleMarker(
+                [32.5389, 36.1021],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_9206e4c8eefd18854ef644960514b222 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8b36da6d10624c33a1cf3be78020a891 = $(`<div id="html_8b36da6d10624c33a1cf3be78020a891" style="width: 100.0%; height: 100.0%;"><b>DSC019</b><br>جمعية  ميرال.<br>Daraa</div>`)[0];
+                popup_9206e4c8eefd18854ef644960514b222.setContent(html_8b36da6d10624c33a1cf3be78020a891);
+            
+        
+
+        circle_marker_c11f27b96dc16e6d9f17146d41bf6a80.bindPopup(popup_9206e4c8eefd18854ef644960514b222)
+        ;
+
+        
+    
+    
+            circle_marker_c11f27b96dc16e6d9f17146d41bf6a80.bindTooltip(
+                `<div>
+                     DSC019
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eaa776c802b6aa49b7eb841ab65b8690 = L.circleMarker(
+                [32.6189, 36.0221],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_30fe46887c737f4ab2440e08d16ce519 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4ce2d1aaa893a18b3199e0972358d66b = $(`<div id="html_4ce2d1aaa893a18b3199e0972358d66b" style="width: 100.0%; height: 100.0%;"><b>DSC020</b><br>جمعية  ميرال.<br>Daraa</div>`)[0];
+                popup_30fe46887c737f4ab2440e08d16ce519.setContent(html_4ce2d1aaa893a18b3199e0972358d66b);
+            
+        
+
+        circle_marker_eaa776c802b6aa49b7eb841ab65b8690.bindPopup(popup_30fe46887c737f4ab2440e08d16ce519)
+        ;
+
+        
+    
+    
+            circle_marker_eaa776c802b6aa49b7eb841ab65b8690.bindTooltip(
+                `<div>
+                     DSC020
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_24245cd25680d12812521e555171a769 = L.circleMarker(
+                [35.4917, 35.72221796769725],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_f1ebb67f10b9bd8991f04ca619b70b5e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_437dc165a6927bf9dc8592360f108c53 = $(`<div id="html_437dc165a6927bf9dc8592360f108c53" style="width: 100.0%; height: 100.0%;"><b>DSC021</b><br>نبض المتوسط<br>Lattakia</div>`)[0];
+                popup_f1ebb67f10b9bd8991f04ca619b70b5e.setContent(html_437dc165a6927bf9dc8592360f108c53);
+            
+        
+
+        circle_marker_24245cd25680d12812521e555171a769.bindPopup(popup_f1ebb67f10b9bd8991f04ca619b70b5e)
+        ;
+
+        
+    
+    
+            circle_marker_24245cd25680d12812521e555171a769.bindTooltip(
+                `<div>
+                     DSC021
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34c651cc92d82bdd72ea1b921200c7a9 = L.circleMarker(
+                [33.42, 36.55],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_6bd9d395f4ce83884d6e36f30c40d5bc = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_bb5b0289a9032877984fb7c1e9df8efd = $(`<div id="html_bb5b0289a9032877984fb7c1e9df8efd" style="width: 100.0%; height: 100.0%;"><b>DSC022</b><br>Mouj<br>Rural Damascus</div>`)[0];
+                popup_6bd9d395f4ce83884d6e36f30c40d5bc.setContent(html_bb5b0289a9032877984fb7c1e9df8efd);
+            
+        
+
+        circle_marker_34c651cc92d82bdd72ea1b921200c7a9.bindPopup(popup_6bd9d395f4ce83884d6e36f30c40d5bc)
+        ;
+
+        
+    
+    
+            circle_marker_34c651cc92d82bdd72ea1b921200c7a9.bindTooltip(
+                `<div>
+                     DSC022
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_26030a780ced1081077f1eae029cda23 = L.circleMarker(
+                [35.0518, 36.758],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_912c827f555effefea3b8812ec9bcbd3 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d716b50c9e4da765148565bdabad5b2f = $(`<div id="html_d716b50c9e4da765148565bdabad5b2f" style="width: 100.0%; height: 100.0%;"><b>DSC023</b><br>جمعية خزامى<br>Hama</div>`)[0];
+                popup_912c827f555effefea3b8812ec9bcbd3.setContent(html_d716b50c9e4da765148565bdabad5b2f);
+            
+        
+
+        circle_marker_26030a780ced1081077f1eae029cda23.bindPopup(popup_912c827f555effefea3b8812ec9bcbd3)
+        ;
+
+        
+    
+    
+            circle_marker_26030a780ced1081077f1eae029cda23.bindTooltip(
+                `<div>
+                     DSC023
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_46f68596ad142877436b3ca8bf8aeafe = L.circleMarker(
+                [35.1318, 36.678000000000004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c7c39d523dd11d8bbe02237873dcc76c);
+        
+    
+        var popup_619e39773813b32b4033fa1c25b61615 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7f2751a105345d31856432b52cfe00f9 = $(`<div id="html_7f2751a105345d31856432b52cfe00f9" style="width: 100.0%; height: 100.0%;"><b>DSC024</b><br>جمعية خزامى<br>Hama</div>`)[0];
+                popup_619e39773813b32b4033fa1c25b61615.setContent(html_7f2751a105345d31856432b52cfe00f9);
+            
+        
+
+        circle_marker_46f68596ad142877436b3ca8bf8aeafe.bindPopup(popup_619e39773813b32b4033fa1c25b61615)
+        ;
+
+        
+    
+    
+            circle_marker_46f68596ad142877436b3ca8bf8aeafe.bindTooltip(
+                `<div>
+                     DSC024
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_c7c39d523dd11d8bbe02237873dcc76c.addTo(map_a30c734f4d5e8156b6234f5686af36e7);
+        
+    
+            var layer_control_40b57041601b6e4b3e7bf16eb13a1507_layers = {
+                base_layers : {
+                    "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png" : tile_layer_0afd8a8e8da92dcd54038f377c308c73,
+                },
+                overlays :  {
+                    "SFRs (Blue)" : feature_group_22ff27a6317c48230bad16397300a9b7,
+                    "DSCs (Red)" : feature_group_c7c39d523dd11d8bbe02237873dcc76c,
+                },
+            };
+            let layer_control_40b57041601b6e4b3e7bf16eb13a1507 = L.control.layers(
+                layer_control_40b57041601b6e4b3e7bf16eb13a1507_layers.base_layers,
+                layer_control_40b57041601b6e4b3e7bf16eb13a1507_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_a30c734f4d5e8156b6234f5686af36e7);
+
+        
+</script>
+</html>
