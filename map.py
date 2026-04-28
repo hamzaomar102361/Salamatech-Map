@@ -64,7 +64,7 @@ m = folium.Map(
 m.fit_bounds([[32.3, 35.7], [37.3, 42.4]])
 
 # --- SFR: أزرق ---
-sfr_group = folium.FeatureGroup(name="SFRs (Blue)", show=True)
+sfr_group = folium.FeatureGroup(name="SFRs (#c17767)", show=True)
 for _, row in df_sfr.iterrows():
     province = row["Province"]
     if province in province_coords:
@@ -77,9 +77,9 @@ for _, row in df_sfr.iterrows():
         folium.CircleMarker(
             location=[new_lat, new_lon],
             radius=10,
-            color="blue",
+            color="#c17767",
             fill=True,
-            fill_color="blue",
+            fill_color="#c17767",
             fill_opacity=0.8,
             popup=folium.Popup(
                 f"<b>{row['Code']}</b><br>{row['Organization']}<br>{province}",
@@ -90,7 +90,7 @@ for _, row in df_sfr.iterrows():
 sfr_group.add_to(m)
 
 # --- DSC: أحمر ---
-dsc_group = folium.FeatureGroup(name="DSCs (Red)")
+dsc_group = folium.FeatureGroup(name="DSCs (#57703a)", show=True)
 for _, row in df_dsc.iterrows():
     province = row["Province"]
     if province in province_coords:
@@ -103,9 +103,9 @@ for _, row in df_dsc.iterrows():
         folium.CircleMarker(
             location=[new_lat, new_lon],
             radius=10,
-            color="red",
+            color="#57703a",
             fill=True,
-            fill_color="red",
+            fill_color="#57703a",
             fill_opacity=0.8,
             popup=folium.Popup(
                 f"<b>{row['Code']}</b><br>{row['Organization']}<br>{province}",
